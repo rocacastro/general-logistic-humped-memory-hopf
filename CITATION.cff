@@ -9,7 +9,7 @@ authors:
   version: "1.0.0"
   date-released: "2026-06-27"
   license: MIT
-  doi: 10.5281/zenodo.20984999
+  doi: "10.5281/zenodo.20984999"
   url: "https://doi.org/10.5281/zenodo.20984999"
   repository-code: "https://github.com/rocacastro/general-logistic-humped-memory-hopf"
   keywords:
