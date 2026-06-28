@@ -3,20 +3,19 @@ message: "If you use this repository, please cite it as below. After publication
 type: software
 title: "Code and data for Hopf bifurcations in humped-memory predator-prey models with general logistic growth"
 authors:
-
-* family-names: Castro
-  given-names: Rodrigo
-  version: "1.0.0"
-  date-released: "2026-06-27"
-  license: MIT
-  doi: "10.5281/zenodo.20984999"
-  url: "https://doi.org/10.5281/zenodo.20984999"
-  repository-code: "https://github.com/rocacastro/general-logistic-humped-memory-hopf"
-  keywords:
-* Hopf bifurcation
-* predator-prey model
-* humped memory
-* distributed delay
-* general logistic growth
-* Floquet multipliers
-* biological control
+  - family-names: "Castro"
+    given-names: "Rodrigo"
+version: "1.0.0"
+date-released: "2026-06-27"
+license: "MIT"
+doi: "10.5281/zenodo.20984999"
+url: "https://doi.org/10.5281/zenodo.20984999"
+repository-code: "https://github.com/rocacastro/general-logistic-humped-memory-hopf"
+keywords:
+  - "Hopf bifurcation"
+  - "predator-prey model"
+  - "humped memory"
+  - "distributed delay"
+  - "general logistic growth"
+  - "Floquet multipliers"
+  - "biological control"
