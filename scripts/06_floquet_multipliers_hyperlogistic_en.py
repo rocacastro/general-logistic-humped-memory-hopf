@@ -25,7 +25,13 @@ Requires:
     numpy, scipy, matplotlib
 
 Usage:
-    python 06_floquet_multipliers_hyperlogistic_en.py
+    python scripts/06_floquet_multipliers_hyperlogistic_en.py
+
+Outputs:
+    figures/floquet_multipliers_hyperlogistic_en.pdf
+    figures/floquet_multipliers_hyperlogistic_en.png
+    data/generated/floquet_multipliers_hyperlogistic_en.csv
+    data/generated/periodic_orbit_hyperlogistic_en.csv
 """
 
 from pathlib import Path
@@ -237,10 +243,16 @@ def plot_multipliers(multipliers, outdir):
 
 
 def main():
-    outdir = Path("figures_floquet_en")
-    data_dir = Path("data_floquet_en")
-    outdir.mkdir(exist_ok=True)
-    data_dir.mkdir(exist_ok=True)
+    try:
+        base_dir = Path(__file__).resolve().parent
+    except NameError:
+        base_dir = Path.cwd()
+
+    root_dir = base_dir.parent if base_dir.name == "scripts" else base_dir
+    outdir = root_dir / "figures"
+    data_dir = root_dir / "data" / "generated"
+    outdir.mkdir(parents=True, exist_ok=True)
+    data_dir.mkdir(parents=True, exist_ok=True)
 
     x_guess, T_guess, peak_times, peak_states = find_peak_guess()
     x_periodic, T_periodic, residual = refine_periodic_orbit(x_guess, T_guess)

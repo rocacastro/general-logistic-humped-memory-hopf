@@ -18,7 +18,7 @@ The figure shows:
 Outputs:
     figures/applied_control_theta2_orbit_clear_en.pdf
     figures/applied_control_theta2_orbit_clear_en.png
-    data/applied_theta2_long_trajectory.csv
+    data/generated/applied_theta2_long_trajectory.csv
 """
 
 from pathlib import Path
@@ -36,7 +36,7 @@ except NameError:
     BASE_DIR = Path.cwd()
 
 ROOT_DIR = BASE_DIR.parent if BASE_DIR.name == "scripts" else BASE_DIR
-DATA_DIR = ROOT_DIR / "data"
+DATA_DIR = ROOT_DIR / "data" / "generated"
 FIG_DIR = ROOT_DIR / "figures"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 FIG_DIR.mkdir(parents=True, exist_ok=True)

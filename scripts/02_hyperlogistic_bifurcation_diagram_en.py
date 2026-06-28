@@ -4,6 +4,11 @@
 Numerical bifurcation diagram for the hyperlogistic example.
 
 The figure labels are in English.
+
+Outputs:
+    figures/bifurcation_diagram_a_hyperlogistic_en.pdf
+    figures/bifurcation_diagram_a_hyperlogistic_en.png
+    data/generated/bifurcation_extrema_hyperlogistic_en.csv
 """
 
 from pathlib import Path
@@ -35,7 +40,7 @@ def rhs(t, x, a):
     ], dtype=float)
 
 
-def integrate_for_a(a, x0, t_final=4000.0, dt=0.25):
+def integrate_for_a(a, x0, t_final=1200.0, dt=0.5):
     t_eval = np.arange(0.0, t_final + dt, dt)
     sol = solve_ivp(
         fun=lambda t, x: rhs(t, x, a),
@@ -58,12 +63,18 @@ def extrema_after_transient(t, y, transient_fraction=0.65):
 
 
 def main():
-    figures_dir = Path("figures_en")
-    data_dir = Path("data_en")
-    figures_dir.mkdir(exist_ok=True)
-    data_dir.mkdir(exist_ok=True)
+    try:
+        base_dir = Path(__file__).resolve().parent
+    except NameError:
+        base_dir = Path.cwd()
 
-    a_cycle_values = np.linspace(a_H - 0.025, a_H - 0.002, 28)
+    root_dir = base_dir.parent if base_dir.name == "scripts" else base_dir
+    figures_dir = root_dir / "figures"
+    data_dir = root_dir / "data" / "generated"
+    figures_dir.mkdir(parents=True, exist_ok=True)
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    a_cycle_values = np.linspace(a_H - 0.025, a_H - 0.003, 18)
     x0 = sigma + np.array([0.01, 0.002, 0.0, 0.0])
 
     rows = []

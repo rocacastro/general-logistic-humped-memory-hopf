@@ -14,8 +14,8 @@ in the reparametrized system:
     r' = a(n-r).
 
 Output:
-    data/hopf_constants_table_en.csv
-    data/hopf_constants_table_en.tex
+    data/generated/hopf_constants_table_en.csv
+    data/generated/hopf_constants_table_en.tex
 """
 
 from pathlib import Path
@@ -31,7 +31,8 @@ try:
 except NameError:
     BASE_DIR = Path.cwd()
 
-DATA_DIR = BASE_DIR.parent / "data" if BASE_DIR.name == "scripts" else BASE_DIR / "data"
+ROOT_DIR = BASE_DIR.parent if BASE_DIR.name == "scripts" else BASE_DIR
+DATA_DIR = ROOT_DIR / "data" / "generated"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 

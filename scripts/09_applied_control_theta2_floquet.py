@@ -18,10 +18,10 @@ The script:
     5. Computes the Floquet multipliers.
 
 Outputs:
-    data/applied_theta2_periodic_orbit.csv
-    data/applied_theta2_floquet_multipliers.csv
-    figures/applied_theta2_floquet_multipliers_en.pdf
-    figures/applied_theta2_floquet_multipliers_en.png
+    data/generated/applied_theta2_periodic_orbit.csv
+    data/generated/applied_theta2_floquet_multipliers.csv
+    figures/floquet_multipliers_applied_theta2_en.pdf
+    figures/floquet_multipliers_applied_theta2_en.png
 """
 
 from pathlib import Path
@@ -41,7 +41,7 @@ except NameError:
     BASE_DIR = Path.cwd()
 
 ROOT_DIR = BASE_DIR.parent if BASE_DIR.name == "scripts" else BASE_DIR
-DATA_DIR = ROOT_DIR / "data"
+DATA_DIR = ROOT_DIR / "data" / "generated"
 FIG_DIR = ROOT_DIR / "figures"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 FIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -253,8 +253,8 @@ def plot_multipliers(multipliers):
     ax.legend(frameon=True, loc="lower left")
     fig.tight_layout()
 
-    pdf_path = FIG_DIR / "applied_theta2_floquet_multipliers_en.pdf"
-    png_path = FIG_DIR / "applied_theta2_floquet_multipliers_en.png"
+    pdf_path = FIG_DIR / "floquet_multipliers_applied_theta2_en.pdf"
+    png_path = FIG_DIR / "floquet_multipliers_applied_theta2_en.png"
     fig.savefig(pdf_path, bbox_inches="tight")
     fig.savefig(png_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
