@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+type: software
+message: "If you use this repository, please cite it as below. After publication, please also cite the associated article."
+title: "Code and data for Hopf bifurcations in humped-memory predator-prey models with general logistic growth"
+authors:
+  - family-names: Castro
+    given-names: Rodrigo
+version: 0.1.0
+date-released: 2026-06-27
+license: MIT
+keywords:
+  - Hopf bifurcation
+  - predator-prey model
+  - humped memory
+  - distributed delay
+  - general logistic growth
+  - Floquet multipliers
+  - biological control

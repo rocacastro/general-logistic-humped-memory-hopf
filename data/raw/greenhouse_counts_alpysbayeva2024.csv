@@ -1,0 +1,7 @@
+treatment,time_days,T_urticae_count_per_linear_meter
+control,0,22
+control,5,43
+control,10,68
+phytoseiulus_persimilis,0,20
+phytoseiulus_persimilis,5,15
+phytoseiulus_persimilis,10,6
