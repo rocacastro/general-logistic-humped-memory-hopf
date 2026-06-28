@@ -1,5 +1,6 @@
 # General logistic growth in humped-memory predator-prey models
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20984999.svg)](https://doi.org/10.5281/zenodo.20984999)
 This repository contains the Python scripts, numerical data, and generated figures associated with a study of Hopf bifurcations in predator-prey models with general logistic prey growth and humped memory.
 
 The repository is intended for reproducibility. It does **not** include the manuscript source files.
@@ -103,4 +104,6 @@ The code in this repository is released under the MIT License.
 
 ## Citation
 
-If you use this repository, please cite the repository and the associated article once it is available.
+If you use this repository, please cite it as:
+
+Rodrigo Castro. *Code and data for Hopf bifurcations in humped-memory predator-prey models with general logistic growth*. Zenodo. https://doi.org/10.5281/zenodo.20984999
