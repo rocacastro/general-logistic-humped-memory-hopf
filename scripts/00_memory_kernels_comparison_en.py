@@ -9,8 +9,8 @@ This script is used for the introductory figure that explains the difference
 between exponential memory and humped memory.
 
 Output:
-    figures/memory_kernels_comparison_en.pdf
-    figures/memory_kernels_comparison_en.png
+    figures/memory_kernels_comparison_english.pdf
+    figures/memory_kernels_comparison_english.png
 """
 
 from pathlib import Path
@@ -52,15 +52,14 @@ ax.text(s_max + 0.08, 0.92 * max(G0.max(), G1.max()), r"$s=1/a$", fontsize=11)
 
 ax.set_xlabel(r"$s$")
 ax.set_ylabel("Weight of the past")
-ax.set_title("Exponential memory and humped memory")
 ax.set_xlim(0.0, 6.0)
 ax.set_ylim(bottom=0.0)
 ax.legend(frameon=True)
 
 fig.tight_layout()
 
-pdf_path = FIG_DIR / "memory_kernels_comparison_en.pdf"
-png_path = FIG_DIR / "memory_kernels_comparison_en.png"
+pdf_path = FIG_DIR / "memory_kernels_comparison_english.pdf"
+png_path = FIG_DIR / "memory_kernels_comparison_english.png"
 fig.savefig(pdf_path, bbox_inches="tight")
 fig.savefig(png_path, dpi=300, bbox_inches="tight")
 plt.close(fig)
