@@ -1,0 +1,36 @@
+{
+  "title": "General logistic growth in humped-memory predator-prey models: reproducibility archive",
+  "version": "2.0.0",
+  "publication_date": "2026-09-02",
+  "upload_type": "software",
+  "description": "Python scripts, input data, generated numerical data, and figures supporting the analysis of Hopf bifurcation in humped-memory predator-prey models with general logistic prey growth. Version 2.0.0 adds growth-law generality, parameter sensitivity, scenario-based uncertainty, and a matched-mean comparison with exponential memory. The manuscript source files are not included.",
+  "creators": [
+    {
+      "name": "Castro, Rodrigo",
+      "orcid": "0000-0003-0010-7775",
+      "affiliation": "Universidad de Valparaíso"
+    },
+    {
+      "name": "Arce González, Luis",
+      "affiliation": "Universidad de Santiago de Chile"
+    },
+    {
+      "name": "Echeverri, Luis F.",
+      "affiliation": "Universidad de Antioquia"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "keywords": [
+    "general logistic growth",
+    "Hopf bifurcation",
+    "humped memory",
+    "distributed delay",
+    "predator-prey model",
+    "biological control",
+    "parameter sensitivity",
+    "uncertainty analysis",
+    "Floquet multipliers"
+  ]
+}
