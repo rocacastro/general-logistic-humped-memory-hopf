@@ -1,0 +1,33 @@
+REPRODUCIBILITY CHECKS FOR VERSION 2.0.0
+========================================
+
+Environment used for this package build
+---------------------------------------
+Python: 3.13.5
+
+Checks completed
+----------------
+1. All repository Python files passed `python -m py_compile`.
+2. `.zenodo.json` parsed as valid JSON.
+3. `CITATION.cff` parsed as valid YAML/CFF syntax.
+4. The complete command `python run_all.py` finished successfully.
+5. All outputs required by the revised manuscript were found by
+   `python validate_outputs.py`.
+6. The generated CSV files common to the audited manuscript package were
+   compared numerically. All tables and arrays agree; maximum differences in
+   shooting/Floquet outputs are below 3.3e-13 and arise only from floating-point
+   solver tolerances.
+7. The uncertainty ensemble reproduces 20,000 scenarios with the fixed seed,
+   a fraction 0.9222 with a=0.18 below the sampled threshold, and a fraction
+   1.0000 with ell_1<0.
+
+Reference build runtime
+-----------------------
+The full workflow completed in approximately 38 seconds in the build
+environment. Runtime depends on hardware and numerical-library versions.
+
+Important note
+--------------
+These checks establish computational reproducibility and consistency with the
+revised manuscript package. They do not constitute formal proof-assistant
+verification of every mathematical statement.
