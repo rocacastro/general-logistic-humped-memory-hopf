@@ -1,6 +1,6 @@
 # General logistic growth in humped-memory predator-prey models
 
-<!-- Add the Zenodo v2.0.0 DOI badge here after the release is archived. -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20984998.svg)](https://doi.org/10.5281/zenodo.20984998)
 
 ## Reproducibility archive — version 2.0.0
 
@@ -8,20 +8,21 @@ This repository contains the Python scripts, input data, generated numerical
 results, and figures supporting a study of Hopf bifurcation in predator-prey
 models with **general logistic prey growth** and humped memory.
 
-The primary mathematical result is that the local Hopf spectral mechanism is
-preserved for a broad class of admissible logistic functions, while the
-critical threshold, frequency, direction, and resulting periodic behavior
-retain the local signature of the selected growth law. The computational
-archive also supports parameter-sensitivity, uncertainty, and matched-mean
+The study's primary mathematical result is that the local Hopf transition
+persists for a broad class of admissible logistic prey-growth functions, rather
+than being an artifact of the classical linear logistic law. The critical
+threshold and Hopf frequency depend on the local values of the selected growth
+law at coexistence, while the direction and stability of the bifurcating
+periodic orbits also depend on its higher derivatives. The computational
+archive further supports growth-law comparisons, parameter-sensitivity
+analysis, scenario-based uncertainty propagation, and matched-mean
 memory-kernel comparisons.
 
 The manuscript source files are intentionally **not** included.
 
-> **Zenodo status.** This package is prepared for the GitHub release `v2.0.0`.
-> Zenodo will assign a new version-specific DOI after the release is published.
-> The previous archived version is available at
-> `https://doi.org/10.5281/zenodo.20985929`, but that DOI does not identify the
-> expanded version-2 files.
+> **Archived release.** Version `v2.0.0` of this reproducibility archive is permanently archived in Zenodo:
+> **https://doi.org/10.5281/zenodo.22262977**.
+> This version-specific DOI identifies exactly the scripts, data, and figures associated with release `v2.0.0`.
 
 ## Repository structure
 
@@ -139,7 +140,8 @@ cited together with the archived software release and the associated article.
 
 ## Citation
 
-After Zenodo archives release `v2.0.0`, use its version-specific DOI for exact
-reproducibility. The repository metadata files are prepared for that release.
-The DOI can then be added to this section and to `CITATION.cff` without changing
-the computational contents.
+For exact reproducibility of the computational results in this release, please cite:
+
+**Castro, R., Arce González, L., & Echeverri, L. F. (2026). General logistic growth in humped-memory predator-prey models: reproducibility archive (Version 2.0.0). Zenodo. https://doi.org/10.5281/zenodo.22262977**
+
+If you use the mathematical results or analyses in an academic work, please also cite the associated article once its final bibliographic information is available.
