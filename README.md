@@ -36,7 +36,6 @@ general-logistic-humped-memory-hopf/
 ├── requirements.txt
 ├── run_all.py
 ├── validate_outputs.py
-├── RELEASE_CHECKLIST.md
 ├── scripts/
 ├── data/
 │   ├── README_data.md
